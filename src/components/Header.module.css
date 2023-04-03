@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-around;
 }
+.Nav__icons {
+  display: none;
+}
 .Nav__link {
   font-size: 12px;
   text-transform: uppercase;
