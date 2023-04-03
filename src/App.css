@@ -15,6 +15,19 @@ body {
   max-width: 100vw;
   background: url('../public/assets/images/home.png');
   background-size: cover;
+  animation: body;
+  animation-duration: 10s;
+}
+@keyframes body {
+  from {
+    opacity: 0;
+    background-position-y: -500px;
+    background-position-x: 10vw;
+  }
+  to {
+    opacity: 1;
+  }
+  
 }
 
 .App {
@@ -77,5 +90,11 @@ body {
   body {
     background-position-y: center;
     background-position-y: 35%;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-height: 700px) {
+  body {
+    background-position-x: center;
   }
 }

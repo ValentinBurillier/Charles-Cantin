@@ -1,6 +1,9 @@
 .Header {
   height: 3%;
   padding: 15px 15px 0px 15px;
+  animation-name: header;
+  animation-duration: 4s;
+
 }
 .Nav__list {
   display: flex;
@@ -13,7 +16,19 @@
   font-size: 12px;
   text-transform: uppercase;
 }
-
+.Nav__link:hover {
+  text-decoration: underline;
+}
+ @keyframes header {
+  from {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0px);
+    opacity: 1;
+  }
+ }
 @media screen and (min-width: 500px) and (min-height: 568px) {
   .Header {
     height: 8%;
