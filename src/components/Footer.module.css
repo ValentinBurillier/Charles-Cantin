@@ -1,0 +1,34 @@
+.Footer {
+  height: 7%;
+  border-top: 1px solid white;
+  width: 100%;
+  position: relative;
+  background-color: black;
+}
+.Footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.Container__politiques {
+  display: flex;
+  column-gap: 5px;
+}
+.Container__icons {
+  display: flex;
+  position: absolute;
+  column-gap: 5px;
+  right: 2%;
+}
+.Footer__icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 800px) and (min-height: 568px) {
+  .Footer__icon {
+    display: none;
+  }
+}

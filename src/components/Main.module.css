@@ -1,0 +1,24 @@
+.Main {
+  height: 90%;
+}
+.Main__title2 {
+  font-size: 20px;
+  font-family: 'Amarante', serif;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 500px) and (min-height: 568px)  {
+ .Main {
+  height: 85%;
+ } 
+ .Main__title2 {
+  width: 70%;
+  font-size: 24px;
+ }
+}

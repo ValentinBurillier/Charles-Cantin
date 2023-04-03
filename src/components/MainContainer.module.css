@@ -1,0 +1,29 @@
+.Container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100px;
+  min-width: 180px;
+}
+.Container__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 50px;
+}
+
+@media screen and (min-width: 500px) and (min-height: 568px)  {
+  .Container {
+    width: 250px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Container__title {
+    font-size: 24px;
+  }
+}

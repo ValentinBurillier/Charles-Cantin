@@ -1,0 +1,49 @@
+.Header {
+  height: 3%;
+  padding: 15px 15px 0px 15px;
+}
+.Nav__list {
+  display: flex;
+  justify-content: space-around;
+}
+.Nav__link {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) and (min-height: 568px) {
+  .Header {
+    height: 8%;
+    padding: 20px 20px 0px 20px;
+  }
+  .Header__nav {
+    width: 90%;
+    margin: auto;
+  }
+  .Nav__link {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 568px) {
+  .Header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Nav__list {
+    column-gap: 50px;
+  }
+  .Nav__link {
+    font-size: 20px;
+  }
+  .Nav__icons {
+    display: initial;
+    display: flex;
+    column-gap: 10px;
+  }
+  .List__icon {
+    height: 40px;
+    width: 40px;
+  }
+}
