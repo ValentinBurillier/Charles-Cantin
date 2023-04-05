@@ -1,34 +1,35 @@
 import React from "react";
 import styles from './Header.module.css'
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className={styles.Header}>
       <nav className={styles.Header__nav}>
         <ul className={styles.Nav__list}>
           <li>
-            <a href="#" className={styles.Nav__link}>Accueil</a>  
+            <Link to='/' className={styles.Nav__link}>Accueil</Link> 
           </li>
           <li>
-            <a href="#" className={styles.Nav__link}>Galerie</a>  
+            <Link to='/galerie' className={styles.Nav__link}>Galerie</Link>  
           </li>
           <li>
-            <a href="#" className={styles.Nav__link}>Services</a>  
+            <Link to='/services' className={styles.Nav__link}>Services</Link> 
           </li>
           <li>
-            <a href="#" className={styles.Nav__link}>Contact</a>  
+            <Link to='/contact' className={styles.Nav__link}>Contact</Link>
           </li>
         </ul>
 
         <ul className={styles.Nav__icons}>
           <li>
-            <a href="">
+            <Link to='https://www.facebook.com'>
               <img src="../../assets/images/facebook.png" alt="facebook" className={styles.List__icon}></img>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to='https://www.instagram.com'>
               <img src="../../assets/images/instagram.png" alt="instagram" className={styles.List__icon}></img>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

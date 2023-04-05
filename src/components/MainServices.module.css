@@ -1,0 +1,63 @@
+.Main {
+  height: 97%;
+}
+.Main__title {
+  font-size: 26px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Main__description {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  line-height: 200%;
+  font-size: 20px;
+}
+.Main__price {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: black;
+  background-color: rgba(217, 217, 217, 0.5);
+  padding: 5px;
+  letter-spacing: 1px;
+}
+.Main__container {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  column-gap: 10px;
+}
+.Container__btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: none;
+}
+.Container__icons {
+  display: flex;
+  position: absolute;
+  column-gap: 5px;
+  right: 2%;
+  bottom: 1.5%;
+}
+.Footer__icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 800px) and (min-height: 568px) {
+  .Footer__icon {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+body {
+  background-position-x: center;
+  background-position-y: center;
+}
+body > div {
+  height: 100%;
+  position: relative;
+}
