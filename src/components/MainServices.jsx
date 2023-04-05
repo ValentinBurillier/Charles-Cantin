@@ -8,12 +8,12 @@ const MainServices = (props) => {
       <p className={styles.Main__description}>{props.description}</p>
       <p className={styles.Main__price}>{props.price}</p>
       <div className={styles.Main__container}>
-        <button className={styles.Container__btn} id="1"></button>
-        <button className={styles.Container__btn} id="2"></button>
-        <button className={styles.Container__btn} id="3"></button>
-        <button className={styles.Container__btn} id="4"></button>
-        <button className={styles.Container__btn} id="5"></button>
-        <button className={styles.Container__btn} id="6"></button>
+        <button className={styles.Container__btn} id={styles.Btn1} data-nb="1"></button>
+        <button className={styles.Container__btn} id={styles.Btn2} data-nb="2"></button>
+        <button className={styles.Container__btn} id={styles.Btn3} data-nb="3"></button>
+        <button className={styles.Container__btn} id={styles.Btn4} data-nb="4"></button>
+        <button className={styles.Container__btn} id={styles.Btn5} data-nb="5"></button>
+        <button className={styles.Container__btn} id={styles.Btn6} data-nb="6"></button>
       </div>
       <ul className={styles.Container__icons}>
           <li>

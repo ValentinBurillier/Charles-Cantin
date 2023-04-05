@@ -1,5 +1,11 @@
+body {
+  background-position-x: center;
+  background-position-y: center;
+}
 .Main {
-  height: 97%;
+  height: 92%;
+  max-width: 1600px;
+  margin: auto;
 }
 .Main__title {
   font-size: 26px;
@@ -43,6 +49,10 @@
   height: 20px;
   border-radius: 50%;
   border: none;
+  background-color: #D9D9D9;
+}
+#Btn1 {
+  background-color: white;
 }
 .Container__icons {
   display: flex;
@@ -59,5 +69,148 @@
 @media screen and (min-width: 800px) and (min-height: 568px) {
   .Footer__icon {
     display: none;
+    font-family: be;
+  }
+}
+
+@media screen and (min-width: 400px) and (min-height: 568px) {
+  .Main__title {
+    font-size: 32px;
+  }
+  .Main__description {
+    font-size: 26px;
+  }
+  .Main__price {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 550px) and (min-height: 568px) {
+  body {
+    background-position-y: -90px;
+  }
+  .Main__title {
+    font-size: 36px
+  }
+  .Main__description {
+    font-size: 28px;
+    max-width: 65%;
+  }
+}
+
+@media screen and (min-width: 650px) and (min-height: 568px) {
+  body {
+    background-position-y: -180px;
+  }
+  .Main__title {
+    font-size: 40px
+  }
+  .Main__description {
+    font-size: 30px;
+    max-width: 65%;
+  }
+  .Main__price {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) and (min-height: 568px) {
+  body {
+    background-position-y: -250px;
+  }
+  .Main__title {
+    top: 50%;
+    left: 20%;
+    font-size: 32px;
+  }
+  .Main__description {
+    font-size: 22px;
+    width: 35%;
+    top: 52%;
+    left: 82%;
+  }
+  .Main__price {
+    top: 60%;
+    left: 20%;
+    font-size: 24px;
+  } 
+}
+
+@media screen and (min-width: 800px) and (min-height: 568px) {
+  body {
+    background-position-y: -250px;
+  }
+  .Main__title {
+    top: 50%;
+    left: 20%;
+    font-size: 32px;
+  }
+  .Main__description {
+    font-size: 22px;
+    width: 35%;
+    top: 52%;
+    left: 82%;
+  }
+  .Main__price {
+    top: 60%;
+    left: 20%;
+    font-size: 24px;
+  } 
+}
+
+@media screen and (min-width: 1050px) and (min-height: 568px) {
+  body {
+    background-position-y: -400px;
+  }
+  .Main__title {
+    font-size: 44px;
+  }
+  .Main__description {
+    font-size: 28px;
+  }
+  .Main__price {
+    font-size: 28px;
+  } 
+}
+
+@media screen and (min-width: 1300px) and (min-height: 568px) {
+  body {
+    background-position-y: -600px;
+  }
+  .Main__title {
+    font-size: 50px;
+  }
+  .Main__description {
+    font-size: 32px;
+  }
+  .Main__price {
+    font-size: 30px;
+  } 
+}
+
+@media screen and (min-width: 1600px) and (min-height: 568px) {
+  body {
+    background-position-y: -700px;
+  }
+  .Main {
+    position: relative;
+  }
+  .Main__title {
+    top: 40%
+  }
+  .Main__description {
+    top: 45%
+  }
+  .Main__price {
+    top: 52%
+  }
+  .Main__container {
+    top: 90%
+  }
+}
+
+@media screen and (min-width: 1850px) and (min-height: 568px) {
+  body {
+    background-position-y: -850px;
   }
 }
