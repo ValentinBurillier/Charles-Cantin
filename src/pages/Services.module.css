@@ -1,4 +1,9 @@
 body > div {
   height: 100%;
   position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.test {
+  background-color: white;
 }

@@ -2,6 +2,9 @@ body {
   background-position-x: center;
   background-position-y: center;
 }
+.BgImg2 {
+  display: none;
+}
 .Main {
   height: 92%;
   max-width: 1600px;
@@ -15,6 +18,7 @@ body {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 50%;
 }
 .Main__description {
   position: absolute;
@@ -120,40 +124,18 @@ body {
   }
   .Main__title {
     top: 50%;
-    left: 20%;
+    left: 25%;
     font-size: 32px;
   }
   .Main__description {
     font-size: 22px;
     width: 35%;
-    top: 52%;
-    left: 82%;
+    top: 55%;
+    left: 80%;
   }
   .Main__price {
     top: 60%;
-    left: 20%;
-    font-size: 24px;
-  } 
-}
-
-@media screen and (min-width: 800px) and (min-height: 568px) {
-  body {
-    background-position-y: -250px;
-  }
-  .Main__title {
-    top: 50%;
-    left: 20%;
-    font-size: 32px;
-  }
-  .Main__description {
-    font-size: 22px;
-    width: 35%;
-    top: 52%;
-    left: 82%;
-  }
-  .Main__price {
-    top: 60%;
-    left: 20%;
+    left: 25%;
     font-size: 24px;
   } 
 }
@@ -163,7 +145,7 @@ body {
     background-position-y: -400px;
   }
   .Main__title {
-    font-size: 44px;
+    font-size: 40px;
   }
   .Main__description {
     font-size: 28px;
