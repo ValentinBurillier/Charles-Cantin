@@ -13,7 +13,9 @@ const Services = () => {
   const [imgSm, setImgSm] = useState('');
   const [imgM, setImgM] = useState('');
   const [imgL, setImgL] = useState('');
+  const bgBody = document.getElementsByTagName('body')[0];
 
+  
   /* GET BDD  ALL DATA (VALIDE) STOCK IN CONST DATA */
   useEffect(() => {
     fetch('http://localhost:1337/api/services-p?populate=*')
@@ -28,6 +30,14 @@ const Services = () => {
     var btnDataSet = element.dataset.nb;
     getDataService(data, btnDataSet)
   }))
+  window.addEventListener('load', () => {
+    allBtn.forEach(function(element) {
+    var btnDataSet = "0";
+    console.log(btnDataSet);
+    getDataService(data, btnDataSet)
+    })
+  
+  })
 
   /* FUNCTION GET DATA OF THE SERVICE */
   function getDataService(data, btnDataSet) {
@@ -46,12 +56,10 @@ const Services = () => {
     imgTest(btnDataSet);
   }
   // const urlImage = data.image.data.attributes.url;
-    const bgBody = document.getElementsByTagName('body')[0];
 
   // DISPLAY GOOD IMAGE RESOLUTION UNDER THE SIZE SCREEN
     function imgTest(btnDataSet) {
       let mediaBase = window.matchMedia("(max-width: 799px)");
-      
       if (mediaBase.matches) {
         let urlImgSm = `url('http://localhost:1337${imgSm}')`; // GOOD URL
         bgBody.style.backgroundImage = urlImgSm; // GOOT SYNTAXE BUT NOT DISPLAY
@@ -131,7 +139,12 @@ const Services = () => {
           return;
       }
     }
+    /* FUNCTION START PAGE */
+    // function start() {
+
+    // }
     window.addEventListener('resize', imgTest);
+    
     imgTest();
 
   return (
