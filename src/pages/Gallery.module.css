@@ -1,0 +1,57 @@
+/* IMAGE BACKGROUND */
+body {
+  background: url('../../public/assets/images/bg_gallery_sm.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 600px) and (min-height: 568px) {
+  body {
+    background-position-y: -330px;
+  }
+}
+
+@media screen and (min-width: 720px) and (min-height: 568px) {
+  body {
+    background-position-y: -510px;
+  }
+}
+
+@media screen and (min-width: 900px) and (min-height: 568px) {
+  body {
+    background-position-y: -700px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-height: 568px) {
+  body {
+    background: url('../../public/assets/images/bg_gallery_l.jpg');
+    background-position-y: 850px;
+    background-position-x: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1500px) and (min-height: 568px) {
+  body {
+    background: url('../../public/assets/images/bg_gallery_l.jpg');
+    background-position-y: 1000px;
+    background-position-x: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1880px) and (min-height: 568px) {
+  body {
+    background: url('../../public/assets/images/bg_gallery_l.jpg');
+    background-position-y: 1200px;
+    background-position-x: center;
+    background-size: cover;
+  }
+}
+
+.Bg__opacity {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}

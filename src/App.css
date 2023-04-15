@@ -14,8 +14,8 @@ body {
   max-height: 100vh;
   width: 100vw;
   max-width: 100vw;
-  background: url('../public/assets/images/home.png');
-  background-size: cover;
+  /* background: url('../public/assets/images/home.png'); */
+  /* background-size: cover; */
   animation: body;
   animation-duration: 10s;
 }

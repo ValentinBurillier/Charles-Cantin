@@ -1,0 +1,39 @@
+.Main__section {
+  height: 80%;
+  width: 100%;
+  display: flex;
+}
+
+.Section__tlSection {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.Section__tlSection h2 {
+  font-size: 18px;
+}
+
+.Section__brSection {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.Section__ContainerImg {
+ height: 264px;
+ width: 177px;
+ box-shadow: 0px 0px 0px 5px white;
+ overflow: scroll;
+}
+
+.Section__ContainerImg img {
+  background-size: cover;
+
+}
